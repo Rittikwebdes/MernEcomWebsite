@@ -16,7 +16,7 @@ const port = process.env.PORT
 const mongourl = process.env.MONGO_URI
 export const secretKey = process.env.JWT_SECRET_KEY
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
+    origin:true,
     methods:["GET","POST","DELETE","UPDATE"],
     credentials:true
 }))
